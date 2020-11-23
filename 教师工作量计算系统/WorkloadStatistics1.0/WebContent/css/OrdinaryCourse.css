@@ -1,0 +1,307 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.text1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line1{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	height: 0px;
+	border: 0.5px solid #ccc;
+}
+.text2, .text3{
+	position: absolute;
+	top: 60px;
+	left: 25px;
+	color: green;
+}
+.text3{
+	top: 410px;
+}
+.box1, .box2{
+	position: absolute;
+	top: 85px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.box1{
+	height: 239.5px;
+}
+.box2{
+	top: 435px;
+	height: 200px;
+}
+.course, .grade, .classes, .grade2, .classes2, .courseType, .addPeopleNumber, .infor, .sumTime, .theoryTime, .experimentTime, .number, .result{
+	width: 100%;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.addPeopleNumber{
+	margin-top: 2px;
+}
+.course_name, .grade_name, .classes_name, .grade2_name, .classes2_name, .courseType_name, .addPeopleNumber_name, .infor_name, .sumTime_name, .theoryTime_name, .experimentTime_name, .number_name, .result_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+}
+.course_val, .grade_val, .classes_val, .grade2_val, .classes2_val, .courseType_val, .addPeopleNumber_val, .infor_val, .sumTime_val, .theoryTime_val, .experimentTime_val, .number_val, .result_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.course_textBox, .grade_textBox, .courseType_textBox, .addPeopleNumber_textBox, .infor_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+    height: 35px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.classes_textBox1, .classes_textBox2, .classes_textBox3, .classes_textBox4, .classes2_textBox1, .classes2_textBox2, .classes2_textBox3, .classes2_textBox4{
+	position: absolute;
+	top: -37px;
+	left: 0px;
+	width: 100%;
+	height: 35px;
+    /* border: 1px solid black; */
+	display:none;
+}
+.course_textBox, .grade_textBox, .courseType_textBox{
+	width: 22.2%;
+}
+.addPeopleNumber_textBox, .infor_textBox{
+	top: -38px;
+	height: 34px;
+}
+.sumTime_textBox, .theoryTime_textBox, .experimentTime_textBox, .number_textBox, .result_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+	height: 34px;
+	border: 0px;
+}
+.grade2_textBox{
+	position: absolute;
+	top: -37px;
+	left: 15px;
+}
+.class1, .class2, .class3, .class4, .class1234{
+	margin-top: 12px;
+	margin-left: 12px;
+}
+.sureBtn, .storageBtn{
+	position: absolute;
+	top: 380px;
+	left: 47%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.storageBtn{
+	top: 650px;
+}
+.selectOptionBox{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+.s1{
+	position: absolute;
+	top: -30px;
+	left: 25%;
+	color: orange;
+	font-size: 14px;
+}
+.oneBtn, .twoBtn, .threeBtn, .fourBtn{
+	width: 20px;
+	height: 20px;
+	margin-right: 15px; 
+}
+/* .classes2_textBox1{
+	display: block;
+} */
+.choice{
+	position: absolute;
+	top: 324px;
+	left: 22px;
+	width: 97%;
+	height: 40px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+	background-color: #EDF3F4;
+}
+.choice_name{
+    position: absolute; 
+	top: 9px;
+	left: 38px;
+	font-size: 15px;
+	color: #336199;
+}
+.choice_textBox{
+    position: absolute;
+	top: 5px;
+	left: 160px;
+	width: 100px;
+	height: 30px;
+	/* border: 1px solid black; */
+}
+.radio1{
+    position: absolute;
+    top:10px;
+    left: 0px;
+}
+.radio2{
+	position: absolute;
+	top:10px;
+    left: 50%;
+}
+.radio_text1{
+	position: absolute;
+	top: 5px;
+	font-size: 15px;
+	color: orange;
+	left: 20%;
+}
+.radio_text2{
+	position: absolute;
+	top: 5px;
+	font-size: 15px;
+	color: orange;
+	left: 70%;
+}
+.box3{
+	position: absolute;
+	top: 366px;
+	left: 22px;
+	width: 97%;
+	height: 200px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+    display: none;
+}
+.grade3, .classes, .showClasses, .people, .showPeople{
+    width: 100%;
+	height: 40px;
+}
+.grade3_name, .classes_name, .showClasses_name, .people_name, .showPeople_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 15px;
+}
+.grade3_val, .classes_val, .showClasses_val, .people_val, .showPeople_val{
+    position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.grade3_textBox, .showClasses_textBox, .showPeople_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22.3%;
+    height: 35px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.showClasses_textBox, .showPeople_textBox{
+	top: -38px;
+	width: 22%;
+}
+.c{
+	position: absolute;
+	top: -40px;
+    width: 310px;
+    height: 40px;
+   /* border: 1px solid black;*/
+}
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #438eb9;
+    background-color: #438eb9;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+#c2{
+	left: 40px;
+}
+#c3{
+	left: 70px;
+}
+#c4{
+	left: 100px;
+}
+#c5{
+	left: 130px;
+}
+#c6{
+	left: 160px;
+}
+#c7{
+	left: 190px;
+}
+#c8{
+	left: 220px;
+}
+#c9{
+	left: 250px;
+}
+#c10{
+	left: 280px;
+}
+.classes1_textBox, .classes2_textBox, .classes3_textBox, .classes4_textBox{
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	width: 98%;
+	height: 40px;
+	/* border: 1px solid black; */
+	display: none;
+}
+.classes1_textBox{
+	display: block;
+}
+.clearBtn{
+	position: absolute;
+	top: -30px;
+	left: 25%;
+	width: 40px;
+	height: 23px;
+	border: 1px solid #438eb9;
+	background-color:#438eb9;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+}

@@ -1,0 +1,107 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.text1{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line1{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	height: 0px;
+	border: 0.5px solid #ccc;
+}
+.teamProject, .personalProject, .resultall, .courseBox{
+    position: absolute;
+	top: 65px;
+	left: 22px;
+	width: 97%;
+	height: 111px;
+	/*border: 0.5px solid black;*/
+	box-sizing: border-box;
+}
+.teamProject{
+	top: 110px;
+}
+.personalProject{
+	top: 225px;
+}
+.resultall{
+	top: 380px;
+}
+.titleSon1, .titleSon2, .titleSon3{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	color: green;
+}
+.teamBox, .personalBox, .resultBox{
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	height: 80px;
+    border: 0.5px solid #DCEBF7; 
+	box-sizing: border-box;
+}
+.resultBox{
+	height: 79.5px;
+}
+.teamNumber, .teamday, .personalNumber, .personalday, .showInfor, .result, .courseType{
+	width: 100%;
+	height: 40px;
+}
+.courseType{
+	border: 1px solid #DCEBF7;
+	height: 38px;
+}
+.teamNumber_name, .teamday_name, .personalNumber_name, .personalday_name, .showInfor_name, .result_name, .courseType_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+}
+.teamNumber_val, .teamday_val, .personalNumber_val, .personalday_val, .showInfor_val, .result_val, .courseType_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+
+.teamNumber_box, .teamday_box, .personalNumber_box, .personalday_box, .showInfor_textBox, .result_textBox, .courseType_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 23%;
+    height: 36px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.personalday_box{
+	top: -37.5px;
+}
+.showInfor_textBox, .result_textBox{
+	border: 0px;
+}
+.button1, .button2{
+	position: absolute;
+	top: 350px;
+	left: 45%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	top: 505px;
+}

@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: relative;
+}
+.text{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.text2, .text3{
+	position: absolute;
+	top: 60px;
+	left: 25px;
+	color: green;
+}
+.text3{
+	top: 330px;
+}
+.line{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+}
+.box1{
+	position: absolute;
+	top: 85px;
+	left: 22px;
+	width: 97%;
+	height: 199.5px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.box1_1{
+	display: none;
+}
+.box1_2{
+	display: block;
+}
+.courseType, .computingType, .days, .classNum, .teacherNum, .playTime, .classRange, .newPeopleNum, .infor{
+	width: 100%;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.courseType_name, .computingType_name, .days_name, .classNum_name, .teacherNum_name, .playTime_name, .classRange_name, .newPeopleNum_name, .infor_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+}
+.courseType_val, .computingType_val, .days_val, .classNum_val, .teacherNum_val, .playTime_val, .classRange_val, .newPeopleNum_val, .infor_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.courseType_textBox, .computingType_textBox, .days_textBox, .classNum_textBox, .teacherNum_textBox, .playTime_textBox, .newPeopleNum_textBox, .infor_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+    height: 35px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.classRange_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+	width: 22%;
+	height: 35px;
+	/*border: 1px solid black;*/
+}
+.classRange1_textBox, .classRange2_textBox{
+	position: absolute;
+	width: 45%;
+    height: 35px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.classRange2_textBox{
+    left: 55%;
+}
+.logo{
+	position: absolute;
+	left: 46.2%;
+	font-size: 25px;
+
+}
+.infor_textBox{
+	top: -38px;
+	width: 21.85%;
+}
+.box2{
+	position: absolute;
+	top: 355px;
+	left: 22px;
+	width: 97%;
+	height: 80px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.show, .result{
+	width: 100%;
+	height: 40px;
+}
+.show_name, .result_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+}
+.show_val, .result_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.show_textBox, .result_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 21.85%;
+    height: 34px;
+    border: 0px;
+}
+.button1, .button2{
+	position: absolute;
+	top: 300px;
+	left: 47%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	top: 450px;
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="mybatis">
+	<!-- 班级表的增删改查  -->
+	<insert id="insertClassTable" parameterType="ClassTable">
+		insert into classtable(grade,classs,npeople) values(#{grade},#{classs},#{npeople})
+	</insert>
+	<delete id="deleteClassTable" parameterType="ClassTable">
+		delete from classtable where classs=#{classs}
+	</delete>
+	<update id="updateClassTable" parameterType="ClassTable">
+		update classtable set npeople=#{npeople} where classs=#{classs}
+	</update>
+	<select id="selectClassTable" parameterType="String" resultType="ClassTable">
+		select * from classtable where classs=#{classs}
+	</select>
+	<select id="selectClassTableNumber" parameterType="String" resultType="String">
+		select npeople from classtable where classs=#{classs}
+	</select>
+	<select id="selectAllClassTable" resultType="ClassTable">
+		select * from classtable 
+	</select>
+	<select id="selectGradeAllClassTable" parameterType="String" resultType="ClassTable">
+		select * from classtable where grade=#{grade} 
+	</select>
+		<!-- 课程表的增删改查  -->
+	<insert id="insertCourseTable" parameterType="CourseTable">
+		insert into coursetable(courseID,course,total,reality,experiment) values(#{courseID},#{course},#{total},#{reality},#{experiment})
+	</insert>
+	<delete id="deleteCourseTable" parameterType="CourseTable">
+		delete from coursetable where courseID=#{courseID}
+	</delete>
+	<update id="updateCourseTable" parameterType="CourseTable">
+		update coursetable set course=#{course},total=#{total},reality=#{reality},experiment=#{experiment} where courseID=#{courseID}
+	</update>
+	<select id="selectCourseTable" parameterType="String" resultType="CourseTable">
+		select * from coursetable where courseID=#{courseID}
+	</select>
+	<select id="selectAllCourseTableByPage" parameterType="PageBean" resultType="CourseTable">
+		select * from coursetable limit #{pageNow},#{pageSize}
+	</select>
+	<select id="selectAllCourseTable" resultType="CourseTable">
+		select * from coursetable 
+	</select>
+	<select id="selectCourseTableRow" resultType="int">
+		select count(*) from coursetable 
+	</select>
+		<!-- User表的增删改查  -->
+	<insert id="insertUser" parameterType="User">
+		insert into users(uid,name,password,major,permissions,duty,status,information) values(#{uid},#{name},#{password},#{major},#{permissions},#{duty},#{status},#{information})
+	</insert>
+	<delete id="deleteUser" parameterType="User">
+		delete from users where uid=#{uid}
+	</delete>
+	<update id="updateUser" parameterType="User">
+		update users set major=#{major},permissions=#{permissions},duty=#{duty} where uid=#{uid}
+	</update>
+	<update id="updateUserPermissions" parameterType="User">
+		update users set permissions=#{permissions},duty=#{duty} where uid=#{uid}
+	</update>	
+	<update id="updateUserMajor" parameterType="User">
+		update users set major=#{major} where major=#{majorOld}
+	</update>
+	<update id="updateUserPassword" parameterType="User">
+		update users set password=#{password} where uid=#{uid}
+	</update>
+	<update id="updateUserStatusOne" parameterType="User">
+		update users set status=#{status} where uid=#{uid}
+	</update>
+	<update id="updateUserStatus" parameterType="User">
+		update users set status=#{status},information=#{information} where uid=#{uid}
+	</update>
+	<select id="getUser" parameterType="User" resultType="User">
+		select * from users where uid=#{uid} and password=#{password}
+	</select>
+	<select id="getUser_uid" parameterType="String" resultType="User">
+		select * from users where uid=#{uid}
+	</select>
+	<select id="selectAllUser" resultType="User">
+		select * from users
+	</select>
+	<select id="selectAllMajorTeacher" parameterType="String" resultType="User">
+		select * from users where major=#{major}
+	</select>
+	<select id="selectAllStatusTeacher" parameterType="String" resultType="User">
+		select * from users where status=#{status}
+	</select>
+	<select id="selectAllStatusTeacher_major" parameterType="User" resultType="User">
+		select * from users where status=#{status} and major=#{major}
+	</select>
+	<select id="selectCountAllStatus" parameterType="String" resultType="int">
+		select count(*) from users where status=#{status}
+	</select>
+	<select id="selectCountAllStatusDirection" parameterType="String" resultType="int">
+		select count(*) from users where status=#{status} and major=#{major}
+	</select>
+	<select id="selectAllName" parameterType="String" resultType="String">
+		select name from users where status=#{status}
+	</select>
+	<select id="selectAllNameDirection" parameterType="User" resultType="String">
+		select name from users where status=#{status} and major=#{major}
+	</select>
+		<!-- counts表的增删改查  -->
+	<insert id="insertCount" parameterType="Count">
+		insert into counts(uid,uname,course,duty,ctype,result,reality,experiment,classs,quantity,total) values(#{uid},#{uname},#{course},#{duty},#{ctype},#{result},#{reality},#{experiment},#{classs},#{quantity},#{total})
+	</insert>
+	<delete id="deleteCount" parameterType="Count">
+		delete from counts where uid=#{uid} and course=#{course}
+	</delete>
+	<delete id="deleteCountByOne" parameterType="Count">
+		delete from counts where uid=#{uid} and course=#{course} and classs=#{classs}
+	</delete>
+	<delete id="deleteAllCount" parameterType="String">
+		delete from counts where uid=#{uid}
+	</delete>
+	<update id="updateCount" parameterType="Count">
+		update counts set ctype=#{ctype},result=#{result},reality=#{reality},experiment=#{experiment},quantity=#{quantity},total=#{total}  where uid=#{uid} and course=#{course} and classs=#{classs}
+	</update>
+	<update id="updateCountByOne" parameterType="Count">
+		update counts set classs=#{classes} where uid=#{uid} and classs=#{classs} and course=#{course}
+	</update>
+	<select id="getCount" parameterType="Count" resultType="Count">
+		select * from counts where uid=#{uid} and course=#{course} and classs=#{classs}
+	</select>
+	<select id="selectAllCount" parameterType="User" resultType="Count">
+		select * from counts where uid=#{uid}
+	</select>
+	<select id="countTime" parameterType="User" resultType="double">
+		select sum(result) from counts where uid=#{uid}
+	</select>
+		<!-- equation表的增删改查  -->
+	<insert id="insertEquation" parameterType="Equation">
+		insert into equation(type,formula,numberA) values(#{type},#{formula},#{numberA})
+	</insert>
+	<delete id="deleteEquation" parameterType="Equation">
+		delete from equation where numberA=#{numberA}
+	</delete>
+	<update id="updateEquation" parameterType="Equation">
+		update equation set type=#{type},formula=#{formula} where numberA=#{numberA}
+	</update>
+	<select id="getEquation" parameterType="String" resultType="Equation">
+		select * from equation where numberA=#{numberA}
+	</select>
+	<select id="selectAllEquation" resultType="Equation">
+		select * from equation
+	</select>
+		<!-- other表的增删改查  -->
+	<insert id="insertOther" parameterType="Other">
+		insert into other(course,quantity,uid,result) values(#{course},#{quantity},#{uid},#{result})
+	</insert>
+	<delete id="deleteAllOther" parameterType="String">
+		delete from other where uid=#{uid}
+	</delete>
+	<update id="updateOther" parameterType="Other">
+		update other set quantity=#{quantity},result=#{result} where uid=#{uid}
+	</update>
+	<update id="updateOtherByOne" parameterType="Other">
+		update other set quantity=#{quantity} where uid=#{uid} and quantity=#{quantityed}
+	</update>
+	<select id="selectAllOther" parameterType="User" resultType="Other">
+		select * from other where uid=#{uid}
+	</select>
+	<select id="countOther" parameterType="User" resultType="double">
+		select sum(result) from other where uid=#{uid}
+	</select>
+	<select id="selectOther" parameterType="Other" resultType="Other">
+		select * from other where uid=#{uid}
+	</select>
+		<!-- parameters表的增删改查  -->
+	<insert id="insertParameters" parameterType="Parameters">
+		insert into parameters(parametersID,parametersName,parametersValue) values(#{parametersID},#{parametersName},#{parametersValue})
+	</insert>
+	<delete id="deleteParameters" parameterType="Parameters">
+		delete from parameters where parametersID=#{parametersID}
+	</delete>
+	<update id="updateParameters" parameterType="Parameters">
+		update parameters set parametersName=#{parametersName},parametersValue=#{parametersValue} where parametersID=#{parametersID}
+	</update>
+	<select id="selectParameters" parameterType="String" resultType="Parameters">
+		select * from parameters where parametersID=#{parametersID}
+	</select>
+	<select id="selectAllParameters" resultType="Parameters">
+		select * from parameters
+	</select>
+	<!-- dutytable表的增删改查 -->
+	<insert id="insertDutyTable" parameterType="DutyTable">
+		insert into dutytable(dutyID,dutyName,dutyMoney) values(#{dutyID},#{dutyName},#{dutyMoney})
+	</insert>
+	<delete id="deleteDutyTable" parameterType="DutyTable">
+		delete from dutytable where dutyID=#{dutyID}
+	</delete>
+	<update id="updateDutyTable" parameterType="DutyTable">
+		update dutytable set dutyMoney=#{dutyMoney} where dutyID=#{dutyID}
+	</update>
+	<select id="selectAllDutyTable" resultType="DutyTable">
+		select * from dutytable
+	</select>
+	<select id="selectDutyTable" parameterType="DutyTable" resultType="DutyTable">
+		select * from dutytable where dutyID=#{dutyID}
+	</select>
+		<!-- positiontable表的增删改查  -->
+	<insert id="insertPositionTable" parameterType="PositionTable">
+		insert into positiontable(positionID,positionName,positionTime) values(#{positionID},#{positionName},#{positionTime})
+	</insert>
+	<delete id="deletePositionTable" parameterType="PositionTable">
+		delete from positiontable where positionID=#{positionID}
+	</delete>
+	<update id="updatePositionTable" parameterType="PositionTable">
+		update positiontable set positionName=#{positionName},positionTime=#{positionTime} where positionID=#{positionID}
+	</update>
+	<select id="selectPositionTableRow" resultType="int">
+		select count(*) from positiontable
+	</select>
+	<select id="selectPositionTable" parameterType="String" resultType="PositionTable">
+		select * from positiontable where positionID=#{positionID}
+	</select>
+	<select id="selectAllPositionTableByPage" parameterType="PageBean" resultType="PositionTable">
+		select * from positiontable limit #{pageNow},#{pageSize}
+	</select>
+	<select id="selectAllPositionTable" resultType="PositionTable">
+		select * from positiontable 
+	</select>
+	
+	<!-- Direction表的增删改查  -->
+	<insert id="insertDirection" parameterType="Direction">
+		insert into direction(name) values(#{name})
+	</insert>
+	<delete id="deleteDirection" parameterType="Direction">
+		delete from direction where id=#{id}
+	</delete>
+	<update id="updateDirection" parameterType="Direction">
+		update direction set name=#{name} where id=#{id}
+	</update>
+	<select id="selectAllDirection" resultType="Direction">
+		select * from direction
+	</select>	
+</mapper>

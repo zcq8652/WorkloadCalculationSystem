@@ -1,0 +1,279 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: relative;
+}
+.text1{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+	height: 0px;
+}
+.title1, .title2, .title3, .title4, .title5, .title6, .title7{
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	color: green;
+}
+.title2{
+	top: 135px;
+}
+.title3, .title4, .title5, .title6, .title7{
+	top: 0;
+	left: 0;
+}
+.box1, .box2{
+	position: absolute;
+	top: 85px;
+	left: 22px;
+	width: 97%;
+	height: 40px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.box2{
+	top: 160px;
+}
+.box3, .box4, .box5, .box6, .box7{
+	position: absolute;
+	top: 210px;
+	left: 22px;
+	width: 97%;
+	height: 310px;
+	/*border: 1px solid black;*/
+}
+.box4{
+	top: 320px;
+	height: 50px;
+}
+.box5{
+	top: 395px;
+	height: 108px;
+}
+.box6{
+	top: 670px;
+	height: 103px;
+	/*border: 1px solid black;*/
+}
+.box7{
+	top: 513px;
+	height: 105px;
+	/*border: 1px solid black;*/
+}
+.number, .sel, .sciPaperNum, .classNum, .countryPaperNum, .countryClassNum, .bookName, .show, .result, .bookName2, .rewardTime{
+    width: 100%;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.number_name, .sel_name, .sciPaperNum_name, .classNum_name, .countryPaperNum_name, .countryClassNum_name, .bookName_name, .show_name, .result_name, .bookName2_name, .rewardTime_name{
+	width: 20%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 15px;
+}
+.number_val, .sel_val, .sciPaperNum_val, .classNum_val, .countryPaperNum_val, .countryClassNum_val, .bookName_val, .show_val, .result_val, .bookName2_val, .rewardTime_val{
+	position: absolute;
+    width: 80%;
+    margin-left: 20%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.number_textBox, .sel_textBox, .bookName_textBox, .show_textBox, .result_textBox, .sciPaperNum_textBox, .classNum_textBox, .countryPaperNum_textBox, .countryClassNum_textBox, .bookName2_textBox, .rewardTime_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+    height: 35px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.show_textBox{
+	width: 98%;
+}
+.show_textBox, .result_textBox{
+	height: 34px;
+    border: 0px; 
+}
+.bookName2_textBox, .rewardTime_textBox{
+	height: 34px;
+}
+.box2_1{
+	display: none;
+}
+.open{
+	position: absolute;
+	top: 70px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #438eb9;
+    border: 1px solid #438eb9;
+    border-radius: 6px;
+}
+.box3_1{
+	position: absolute;
+	top: 110px;
+	width: 100%;
+	height: 250px;
+	border: 1px solid #DCEBF7;
+	background-color: #EDF3F4;
+    border-radius: 6px;
+    display: none;
+}
+.box4_1{
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+	background-color: #EDF3F4;
+}
+.box4_1_1{
+	position: absolute;
+	width: 550px;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.radio1, .radio2, .radio3, .radio4{
+	position: absolute;
+	top: 15px;
+}
+.radio1{
+	left: 10px;
+}
+.radio2{
+	left: 160px;
+}
+.radio3{
+	left: 280px;
+}
+.radio4{
+	left: 430px;
+}
+.radio_text1, .radio_text2, .radio_text3, .radio_text4{
+	position: absolute;
+	top: 10px;
+	font-size: 15px;
+	color: orange;
+}
+.radio_text1{
+	left: 30px;
+}
+.radio_text2{
+	left: 180px;
+}
+.radio_text3{
+	left: 300px;
+}
+.radio_text4{
+	left: 450px;
+}
+.box5_1, .box5_2, .box6_1, .box7_1, .box3_2{
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.box5_2{
+	top: 67px;
+	background-color: #EDF3F4;
+}
+.box5_2_name{
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	font-size: 15px;
+	color: #336199;
+}
+.radio5, .radio6, .radio7, .radio8{
+	position: absolute;
+	top: 15px;
+}
+.radio5{
+	left: 330px;
+}
+.radio6{
+	left: 380px;
+}
+.radio_text5, .radio_text6, .radio_text7, .radio_text8{
+	position: absolute;
+	top: 10px;
+	font-size: 15px;
+	color: orange;
+}
+.radio_text5{
+	left: 350px;
+}
+.radio_text6{
+	left: 400px;
+}
+.sureButton, .saveButton{
+	position: absolute;
+	top: 635px;
+	left: 47%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.box6_1{
+	height: 80px;
+}
+.saveButton{
+	top: 790px;
+}
+.box7_1{
+	height: 80px;
+}
+.box3_2{
+	background-color: #EDF3F4;
+}
+.box3_2_name{
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	font-size: 15px;
+	color: #336199;
+}
+.radio7{
+	left: 225px;
+}
+.radio8{
+	left: 275px;
+}
+.radio_text7{
+	left: 245px;
+}
+.radio_text8{
+	left: 295px;
+}
+.s1{
+	position: absolute;
+	top: -30px;
+	left: 24%;
+	color: orange;
+	font-size: 13px;
+}

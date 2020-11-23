@@ -1,0 +1,170 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #56baed;
+}
+.block{
+	position: absolute;
+	top: 40px;
+	left: 34%;
+	width: 420px;
+	height: 550px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.blockTitle{
+	position: absolute;
+	top: 40px;
+	left: 125px;
+	font-weight: bolder;
+}
+.line{
+	position: absolute;
+	top: 60px;
+	left: 116px;
+	width: 190px;
+	height: 0;
+	border: 1px solid #56baed;
+}
+.loginImg{
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	width: 150px;
+}
+.line2, .line3{
+	position: absolute;
+	top: 220px;
+	left: 30px;
+	width: 362px;
+	height: 0;
+	border: 0.5px solid orange;
+}
+.line3{
+	top: 480px;
+}
+.username, .password{
+	position: absolute;
+	left: 35px;
+    width: 347px;
+    height: 50px;
+    border: 1px solid #f6f6f6;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+}
+.username{
+	top: 250px;
+}
+.password{
+	top: 310px;
+}
+.teacherBtn, .reTeacherBtn{
+	position: absolute;
+	top: 380px;
+    width: 130px;
+    height: 45px;
+    background-color: #56baed;
+    border: 1px solid #56baed;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.teacherBtn{
+	left: 70px;
+}
+.reTeacherBtn{
+	left: 220px;
+}
+.forget{
+	position: relative;
+	top: 445px;
+	left: 175px;
+	color: #92badd;
+	cursor: pointer;
+}
+.option{
+    position: absolute;
+    top: 503px;
+    left: 160px;
+}
+.option1{
+	 position: absolute;
+     top: 498px;
+     left: 180px;
+     color: #92badd;
+}
+.allbox{
+	position: relative;
+	top: 41px;
+	left: 34.4%;
+    width: 410px;
+    height: 547px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: none;
+}
+.image{
+	width: 410px;
+	border-radius: 8px;
+}
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11{
+	position: absolute;
+	font-size: 20px;
+	font-family: \96B6\4E66;
+}
+.text1{
+	top: 20px;
+}
+.text2{
+	top: 45px;
+	left: 40px;
+}
+.text3{
+	top: 69px;
+	left: 40px;
+}
+.text4{
+	top: 94px;
+	left: 40px;
+}
+.text5{
+	top: 145px;
+	left: 40px;
+}
+.text6{
+	top: 195px;
+	left: 40px;
+}
+.text7{
+	top: 245px;
+	left: 40px;
+}
+.text8{
+	top: 295px;
+	left: 40px;
+}
+.text9{
+	top: 320px;
+	left: 40px;
+}
+.text10{
+	top: 390px;
+	left: 40px;
+}
+.text11{
+	top: 420px;
+}
+
+
+

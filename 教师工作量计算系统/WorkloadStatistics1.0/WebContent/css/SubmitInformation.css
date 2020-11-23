@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	width: 100%;
+	height: 1500px;
+}
+.title1{
+	position: absolute;
+	top: 20px;
+	left: 35px;
+    font-size: 18px;
+	color: #777;
+}
+.line{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+}
+.auditBox, .returnBox, .notSubmitBox, .passBox, .pass_1Box{
+	width: 97%;
+	height: 70px;
+	/*border: 1px solid black;*/
+	margin-left: 20px;
+	padding: 6px 0px 0px 0px;
+}
+.auditBox{
+	margin-top: 60px;
+}
+.title2, .title3, .title4, .title5, .title6{
+	margin-left: 5px;
+	margin-bottom: 5px;
+	color: green;
+}
+.audit, .return, .notSubmit, .pass, .pass_1{
+	width: 100%;
+	height: 38px;
+	border: 0.5px solid #DCEBF7;
+	background-color: #EDF3F4;
+	box-sizing: border-box;
+	 color: #336199;
+    line-height: 38px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.s1, .s2, .s3, .s4, .s5{
+	margin-left: 15px;
+}
+.button{	
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #438eb9;
+    border: 1px solid #438eb9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.show{
+	width: 97%;
+	height: 250px;
+	border: 1px solid #DCEBF7;
+	background-color: #EDF3F4;
+    border-radius: 6px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.check_box{
+	position: absolute;
+	top: 62px;
+	right: 20px;
+	width: 85px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}

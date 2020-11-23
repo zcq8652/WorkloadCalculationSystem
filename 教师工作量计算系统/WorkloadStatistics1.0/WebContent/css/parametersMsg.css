@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: fixed;
+}
+.title1{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+}
+.table_box{
+	position: absolute;
+	top: 60px;
+	left: 18%;
+	/* border: 1px solid black; */
+}
+.t1, .t2, .t3, .t4{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.t1{
+	margin-left: 55px;
+}
+.t2{
+	margin-left: 185px;
+}
+.t3{
+	margin-left: 150px;
+}
+.t4{
+	margin-left: 45px;
+}
+.id_box, .id_box2{
+	font-size: 16px;
+	width:150px;
+}
+.name_box, .name_box2{
+	font-size: 16px;
+	width: 300px;
+}
+.time_box, .time_box2{
+	width: 150px;
+	font-size: 16px;
+}
+.myBtn, .btn2{
+	width: 50px;
+	height: 28px;
+}
+.del{
+	margin-left: 5px;
+}

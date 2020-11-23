@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: relative;
+}
+.text1{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.text2, .text3{
+	position: absolute;
+	top: 60px;
+	left: 25px;
+	color: green;
+}
+.text3{
+	top: 260px;
+}
+.line1{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	height: 0px;
+	border: 0.5px solid #ccc;
+}
+.socialBox, .socialBox2{
+	position: absolute;
+	top: 85px;
+	left: 22px;
+	width: 97%;
+	height: 119.5px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.socialBox2{
+	top: 285px;
+	height: 79.5px;
+}
+.socialday, .number, .show, .result,.courseType{
+    width: 100%;
+	height: 40px;
+}
+.socialday_name, .number_name, .show_name, .result_name, .courseType_name{
+    width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+}
+.socialday_val, .number_val, .show_val, .result_val, .courseType_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.socialday_box, .number_box, .show_textBox, .result_textBox, .courseType_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 23%;
+    height: 36px;
+    border: 1px solid #d5d5d5; 
+    outline-color: #F8B466;
+}
+.result_textBox, .show_textBox{
+	border: 0px;
+}
+.button1, .button2{
+	position: absolute;
+	top: 220px;
+	left: 47%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	top: 380px;
+}

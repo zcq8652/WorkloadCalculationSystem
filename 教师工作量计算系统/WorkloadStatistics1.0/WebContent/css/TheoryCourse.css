@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.text1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line1{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+	height: 0px;
+}
+.box{
+	position: absolute;
+	top: 65px;
+	left: 22px;
+	width: 97%;
+	height: 279.5px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.course, .class, .time, .classCourse, .classType, .result, .sumtime{
+	width: 100%;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.course_name, .class_name, .time_name, .classCourse_name, .classType_name, .result_name, .sumtime_name{
+    width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+}
+.course_val, .class_val, .time_val, .classCourse_val, .classType_val, .result_val, .sumtime_val{
+	position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.course_textBox, .class_textBox, .time_textBox, .classCourse_textBox, .classType_selectBox, .result_textBox, .sumtime_textBox{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+    height: 33px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.classType_selectBox{
+	width: 22.2%;
+	height: 35px;
+}
+.twobutton{
+	position: absolute;
+	top: 365px;
+	left: 45%;
+	width: 160px;
+	height: 25px;
+/* 	border: 1px solid black; */
+}
+.button1, .button2{
+	position: absolute;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	left: 52%;
+}

@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.text1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line1{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	height: 0px;
+	border: 0.5px solid #ccc;
+}
+.box{
+	position: absolute;
+	top: 65px;
+	left: 22px;
+	width: 97%;
+	height: 239.5px;
+	border: 0.5px solid #DCEBF7;
+	box-sizing: border-box;
+}
+.course, .classType, .class, .time, .classCourse, .result{
+	width: 100%;
+	height: 40px;
+	/*border: 1px solid black;*/
+}
+.course_name, .classType_name, .class_name, .time_name, .classCourse_name, .result_name{
+	width: 15%;
+    height: 38px;
+    background-color: #EDF3F4;
+    color: #336199;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+}
+.course_val, .classType_val, .class_val, .time_val, .classCourse_val, .result_val{
+    position: absolute;
+    width: 85%;
+    margin-left: 15%;
+    border-bottom: 1px dotted #DCEBF7;
+}
+.course_textBox, .classType_selectBox, .time_textBox, .classCourse_textBox, .result_textBox, .class_textBox,.class_textBox2{
+	position: absolute;
+	top: -37px;
+	left: 10px;
+    width: 22%;
+    height: 33px;
+    border: 1px solid #d5d5d5;
+    outline-color: #F8B466;
+}
+.class_textBox, .class_textBox2{
+	width: 10.5%;
+}
+.class_textBox2{
+	/* left: 134px; */
+	left: 12.4%;
+}
+.classType_selectBox{
+	width: 22.2%;
+	height: 35px;
+}
+/*.selectBox2{
+	position: absolute;
+	top: 75px;
+	left: 15.8%;
+	width: 18.65%;
+	height: 100px;
+	border: 1px solid black;
+	z-index: 2;
+}*/
+.button1, .button2{
+	position: absolute;
+	top: 320px;
+	left: 45%;
+	width: 60px;
+	height: 25px;
+	background-color: #9585bf;
+	border: 1px solid #9585bf;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	left: 52%;
+}
+

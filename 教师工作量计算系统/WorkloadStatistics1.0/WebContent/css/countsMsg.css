@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	position: fixed;
+}
+.title1{
+	position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+	color: #777;
+}
+.line{
+	position: absolute;
+	top: 50px;
+	left: 22px;
+	width: 97%;
+	border: 0.5px solid #ccc;
+}
+.table_box{
+	position: absolute;
+	top: 60px;
+	left: 1%;
+	/* border: 1px solid black; */
+}
+.t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.t1{
+	margin-left: 45px;
+}
+.t2{
+	margin-left: 100px;
+}
+.t3{
+	margin-left: 70px;
+}
+.t4{
+	margin-left: 25px;
+}
+.t5{
+	margin-left: 15px;
+}
+.t6{
+	margin-left: 200px;
+}
+.t7{
+	margin-left: 200px;
+}
+.t8{
+	margin-left: 60px;
+}
+.name_box{
+	font-size: 16px;
+	width:180px;
+}
+.type_box{
+	font-size: 16px;
+	width:180px;
+}
+.timeTotal_box{
+	font-size: 16px;
+	width:100px;
+}
+.timeReality_box{
+	font-size: 16px;
+	width:100px;
+}
+.timeExperiment_box{
+	font-size: 16px;
+	width:100px;
+}
+.classes_box{
+	font-size: 16px;
+	width:450px;
+}
+.result_box{
+	font-size: 16px;
+	width:100px;
+}
+.btn{
+	width: 100px;
+}
+.myBtn{
+	width: 50px;
+	height: 28px;
+}
+.del{
+	margin-left: 5px;
+}

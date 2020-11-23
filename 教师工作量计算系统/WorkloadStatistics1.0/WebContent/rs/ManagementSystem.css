@@ -1,0 +1,207 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.allScreen{
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid black;*/
+}
+.screenTop{
+	width: 100%;
+	height: 20%;
+	/*border:1px solid black;*/
+}
+.colorShow{
+	width: 100%;
+	height: 40px;
+	/*border:1px solid black;*/
+    /*background-color: #c4d3e6;*/
+	background: -webkit-linear-gradient(#c4d3e6, white); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#c4d3e6, white); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#c4d3e6, white); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#c4d3e6, white); /* 鏍囧噯鐨勮娉� */
+}
+.logo{
+	width:600px;
+	height:82px;
+	/*border:1px solid black;*/
+	position: relative;
+
+}
+.logoImg{
+	position: absolute;
+	left: 5%;
+    width: 100px;
+}
+.text1{
+	position: absolute;
+	bottom: 35%;
+	left: 20%;
+	font-size: 30px;
+	/*font-weight: bold;*/
+	color: black;
+	cursor: default;
+}
+.text2{
+	position: absolute;
+	bottom: 20%;
+	left: 18.8%;
+	font-size: 13px;
+	color: #B80A12;
+	font-weight: bold;
+	cursor: default;
+}
+.text3{
+	position: absolute;
+	bottom: 30%;
+	left: 55%;
+	font-size: 25px;
+	font-weight: bold;
+	background-image: -webkit-linear-gradient(bottom, blue, #c4d3e6); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    cursor: default;
+}
+.screenCenter{
+	position: relative;
+	width: 100%;
+	height: 73%;
+	/*border: 1px solid black;*/
+}
+#imgShow{
+	position: absolute;
+	left: 35px;
+	width:94.5%;
+	height:466px;
+	/*border: 1px solid black;*/
+
+}
+.img img{
+	width: 100%;
+	height: 466px;
+	display: none;
+	opacity: 0.5;
+}
+.block{
+	position: absolute;
+	top:50px;
+	left: 30%;
+	width: 500px;
+	height: 350px;
+	/*border:1px solid black;*/
+	background-color: white;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+.line{
+	position: absolute;
+	top: 80px;
+	left: 50px;
+	width: 400px;
+	border: 1px solid black;
+}
+.blockTitle{
+	position: absolute;
+	top: 30px;
+	left: 170px;
+	font-size: 40px;
+	font-weight: bold;
+	color: blue;
+	cursor: default;
+}
+.login{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	width: 400px;
+	height: 230px;
+	/*border: 1px solid black;*/
+}
+.usertext1, .usertext2{
+	position: absolute;
+	left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: blue;
+	cursor: default;
+}
+.usertext1{
+	top: 10px;
+}
+.usertext2{
+    top: 70px;
+}
+.username, .password{
+	position: absolute;
+	left: 80px;
+	width: 280px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.username{
+	top: 10px;
+}
+.password{
+    top: 70px;
+}
+.option{
+	position: absolute;
+	top: 120px;
+	left: 30px;
+}
+.option1{
+	position: absolute;
+	top: 115px;
+	left: 50px;
+	color: blue;
+}
+.teacherBtn, .studentBtn{
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 40px;
+	border:2px solid blue;
+    background-color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.teacherBtn{
+	left:70px;
+}
+.studentBtn{
+	left: 230px;
+}
+.forget{
+	position: absolute;
+	top: 200px;
+	left: 165px;
+	color: #333;
+	cursor: pointer;
+}
+.screenBottom{
+	width: 100%;
+	height: 7%;
+	/*border:1px solid red;*/
+	/*background-color: #c4d3e6;*/
+	background: -webkit-linear-gradient(white,#c4d3e6); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(white,#c4d3e6); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(white,#c4d3e6); /* Firefox 3.6 - 15 */
+    background: linear-gradient(white,#c4d3e6); /* 鏍囧噯鐨勮娉� */
+}
+
+label{
+	position: absolute;
+	top:125px;
+	color: #333;
+}
+.teacher{
+    left: 140px;
+}
+.student{
+    left: 210px;
+}
